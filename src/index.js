@@ -4,6 +4,8 @@ import './index.css';
 //import App from './App';
 import App from './components/App';
 
+import 'bootstrap/dist/css/bootstrap.css';
+
 import { Provider } from 'react-redux'
 import store from './store'
 
