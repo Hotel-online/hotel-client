@@ -10,6 +10,8 @@ import { routes } from '../../routes'
 import { menus } from '../../menu'
 import AppMenu from './AppMenu'
 
+///////
+import '../css/style.css';
 
 class SidebarExample extends React.Component {
   render() {
@@ -17,10 +19,7 @@ class SidebarExample extends React.Component {
     return (
       <div >
         <div>
-          <AppMenu menus={menus}
-            onRequestClose={() => { console.log('hola') }}>
-            Loading...
-              </AppMenu>
+          <AppMenu/>
         </div>
         <div>
           <hr />

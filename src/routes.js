@@ -7,7 +7,12 @@ import CategoriaForm from './components/categoria/Form'
 import { RouteWithSubRoutes } from './node_m/react-router-dom-ext'
 
 ////
-const Tacos = ({ routes }) => (
+const Home = () => (
+  <div>
+    <h2>Home</h2>
+  </div>
+)
+const Link = ({ routes }) => (
   <div>
     {routes.map((route, i) => (
       <RouteWithSubRoutes key={i} {...route} />
@@ -17,14 +22,19 @@ const Tacos = ({ routes }) => (
 
 const routes = [
   {
+    path: '/home',
+    //title: 'Home!',
+    component: Home
+  },
+  {
     path: '/catalogo',
     //title: 'catalogo!',
-    component: Tacos,
+    component: Link,
     routes: [
       {
         path: '/catalogo/categorias',
         //title: 'categorias!',
-        component: Tacos,
+        component: Link,
         routes: [
           {
             path: '/catalogo/categorias/list',

@@ -1,5 +1,10 @@
 
 const menus = [
+  {
+    path: '/home',
+    title: 'Home!',
+    icon: 'home',
+  },
 
   {
     path: '/catalogo',

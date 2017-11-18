@@ -7,10 +7,9 @@ import Menu from './Menu'
 
 class AppMenu extends Component {
     render() {
-        const { menus, onRequestClose, classes } = this.props
+        const { menus} = this.props
         return (
-            <Menu menus= {menus} classes= {classes}
-              onRequestClose={onRequestClose}>
+            <Menu menus= {menus} >
                 Loading...
               </Menu>
         )
