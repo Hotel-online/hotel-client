@@ -3,15 +3,11 @@ import React from 'react'
 
 import CategoriaList from './components/categoria/List'
 import CategoriaForm from './components/categoria/Form'
+import Home from './components/home/Home'
 
 import { RouteWithSubRoutes } from './node_m/react-router-dom-ext'
 
 ////
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-)
 const Link = ({ routes }) => (
   <div>
     {routes.map((route, i) => (
@@ -22,7 +18,7 @@ const Link = ({ routes }) => (
 
 const routes = [
   {
-    path: '/home',
+    path: '/',
     //title: 'Home!',
     component: Home
   },
