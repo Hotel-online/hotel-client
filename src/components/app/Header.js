@@ -1,17 +1,14 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
 
 import {
     Link,
-    withRouter,
 } from 'react-router-dom'
 
 
 
-class AppMenu extends Component {
+class Header extends Component {
     render() {
-        const { menus} = this.props
         return (
             <header>
             <nav className="main">
@@ -33,8 +30,4 @@ class AppMenu extends Component {
         )
     }
 }
-AppMenu.propTypes = {
-    menus: PropTypes.array.isRequired,
-}
-
-export default (AppMenu)
+export default (Header)
