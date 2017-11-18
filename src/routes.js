@@ -18,7 +18,7 @@ const Link = ({ routes }) => (
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     //title: 'Home!',
     component: Home
   },
