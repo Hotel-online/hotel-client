@@ -3,6 +3,7 @@ import React from 'react'
 
 import CategoriaList from './components/categoria/List'
 import CategoriaForm from './components/categoria/Form'
+import Habitacion from './components/habitacion/Habitacion'
 import Home from './components/home/Home'
 import Login from './components/Login'
 
@@ -30,6 +31,11 @@ const routes = [
     component: Home
   },
   {
+    path: '/catalogo/habitacion/list',
+    //title: 'list cat!',
+    component: Habitacion
+  },
+  {
     path: '/catalogo',
     //title: 'catalogo!',
     component: Link,
@@ -54,7 +60,9 @@ const routes = [
             //title: 'edit cat!',
             component: CategoriaForm
           }
+          
         ]
+        
       }
     ]
   }

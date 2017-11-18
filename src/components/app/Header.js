@@ -17,7 +17,7 @@ class Header extends Component {
               <ul>
                 <li><Link to="/home">Inicio</Link></li>
                 <li><Link to="/login">login</Link></li>
-                <li><Link to='/catalogo/categorias/list'>Habitaciones</Link></li>
+                <li><Link to='/catalogo/habitacion/list'>Habitaciones</Link></li>
                 <li><Link to="/photos">Fotos</Link></li>
                 <li><Link to="/hotel/person2/list">Person</Link></li>
                 <li><Link to="/hotel/categoria2/list">Categoria</Link></li>
