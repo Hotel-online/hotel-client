@@ -22,7 +22,6 @@ class SidebarExample extends React.Component {
           <AppMenu/>
         </div>
         <div>
-          <hr />
           {routes.map((route, i) => (
             <RouteWithSubRoutes key={i} {...route} />
           ))}
