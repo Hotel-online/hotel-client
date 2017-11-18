@@ -4,6 +4,7 @@ import React from 'react'
 import CategoriaList from './components/categoria/List'
 import CategoriaForm from './components/categoria/Form'
 import Home from './components/home/Home'
+import Login from './components/Login'
 
 import { RouteWithSubRoutes } from './node_m/react-router-dom-ext'
 
@@ -17,6 +18,12 @@ const Link = ({ routes }) => (
 )
 
 const routes = [
+  {
+    path: '/login',
+    title: 'Login!',
+    icon: 'home',
+    component: Login
+  },
   {
     path: '/home',
     //title: 'Home!',
