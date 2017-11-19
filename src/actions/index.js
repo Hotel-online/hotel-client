@@ -6,7 +6,7 @@ export const toggleTheme = () => ({
 })
 
 const client = axios.create({
-    baseURL: "http://localhost:8003"
+    baseURL: "https://hotel-serveree.herokuapp.com/"
 })
 client.interceptors.request.use(
     async (config) => {
