@@ -13,18 +13,19 @@ import { RouteWithSubRoutes } from './node_m/react-router-dom-ext'
 const Link = ({ routes }) => (
   <div>
     {routes.map((route, i) => (
-      <RouteWithSubRoutes key={i} {...route} />
+      <RouteWithSubRoutes key={i} exact={route.exact} {...route} />
     ))}
   </div>
 )
-
-const routes = [
+const routese = [
   {
     path: '/login',
     title: 'Login!',
     icon: 'home',
     component: Login
-  },
+  }
+]
+const routes = [
   {
     path: '/home',
     //title: 'Home!',
@@ -68,7 +69,7 @@ const routes = [
   }
 ]
 
-export { routes }
+export { routes, routese }
 
 
 
