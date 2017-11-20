@@ -27,12 +27,12 @@ class Habitacion extends Component {
                    { list.map((d, index) =>
                     <div className="habitacion" key={d.foto}>
                         <div className="img-habitacion">
-                            <img src={d.foto} alt={d.categoria_nombre} />
+                            <img src={d.foto} alt={d.tipoHabitacion} />
                         </div>
                         <div className="info_rooms">
                             <div className="info">
                                 <h3>
-                                    {d.categoria_nombre}
+                                    {d.tipoHabitacion}
                                 </h3>
                             </div>
                             <div className="info info_color">
