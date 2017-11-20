@@ -1,6 +1,6 @@
 const config = {
     //url: "http://localhost:8003/o/authorize/",
-    url: "https://hotel-serveree.herokuapp.com/o/authorize/",
+    url: "https://hotel-serve.herokuapp.com/o/authorize/",
     client: "O1KLs5LaVLoqky0NmRGpVqLBpgYEE6kscxiOKzl9",
     redirect: "https://hotel-clientt.herokuapp.com",
     scope: "read",
